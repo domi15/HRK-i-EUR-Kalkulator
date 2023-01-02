@@ -1,10 +1,16 @@
 function eur(){
-    var number = prompt("Unesite iznos u Eurima")
-    document.getElementById("HRK").innerHTML = 7.53450*number
+    var numb = prompt("Unesite iznos u Eurima")
+    number = numb
+    numb = 7.53450*numb
+    numb = numb.toFixed(2)
+    document.getElementById("HRK").innerHTML = numb
     document.getElementById('EUR').innerHTML = number
 }
 function hrk(){
-    var number = prompt("Unesite iznos u Kunama")
-    document.getElementById("EUR").innerHTML = number/7.53450
+    var numb = prompt("Unesite iznos u Kunama")
+    number = numb
+    numb = numb/7.53450
+    numb = numb.toFixed(2)
+    document.getElementById("EUR").innerHTML = numb
     document.getElementById('HRK').innerHTML = number
 }
